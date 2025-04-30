@@ -1,6 +1,7 @@
 
 import './App.css';
 import Nav from './Components/Nav';
+import { Link } from 'react-router-dom'
 import Shop from './pages/shop/Shop'
 import Cart from './pages/cart/Cart' 
 
@@ -15,11 +16,9 @@ function App() {
       <Router>
 
         <Nav/>
-        <div>
-            <Link to='/'>Shop</Link>
-        </div>
         <Routes>
-          <Route path='/' element={<Shop/>}/>
+        <Route path='/shopping-cart' element={<><Navigate to="/" replace /><Shop/></>}/>
+          <Route path='/' element={<><Shop/></>}/>
           <Route path='/cart' element={<Cart/>}/>
         </Routes>
       </Router>
