@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import Shop from './pages/shop/Shop'
 import Cart from './pages/cart/Cart' 
 
-import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import {BrowserRouter as Router,Routes,Route,Navigate} from 'react-router-dom'
 import ShopContext from './context/shop-context';
 
 function App() {
