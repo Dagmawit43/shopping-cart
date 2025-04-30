@@ -14,7 +14,7 @@ function App() {
       <Router>
         <Nav/>
         <Routes>
-          <Route path='/' element={<Shop/>}/>
+          <Route path='/shop' element={<Shop/>}/>
           <Route path='/cart' element={<Cart/>}/>
         </Routes>
       </Router>
