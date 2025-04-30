@@ -9,7 +9,7 @@ const getDefautlCart = ()=>{
     }
     return cart
 }
-
+console.log(PRODUCTS)
 const ShopContext = (props) => {
     const [cartItem,setCartItem] = useState(getDefautlCart());
     const getTotalCartAmount = () =>{
