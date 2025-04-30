@@ -11,10 +11,17 @@ function App() {
   return (
     <div className="App">
       <ShopContext>
+        
       <Router>
+
         <Nav/>
+        <div>
+            <Link to='/'>Shop</Link>
+        </div>
+        <Routes>
           <Route path='/' element={<Shop/>}/>
           <Route path='/cart' element={<Cart/>}/>
+        </Routes>
       </Router>
       </ShopContext>
       
