@@ -14,7 +14,7 @@ function App() {
           <Nav />
           <Routes>
             {/* Redirect from root path to /shop */}
-            <Route path="/" element={<Navigate to="/shop" replace />} />
+            <Route path="/" element={<Navigate to="/" replace />} />
             <Route path="/" element={<Shop />} />
             <Route path="/cart" element={<Cart />} />
           </Routes>
